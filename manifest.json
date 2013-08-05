@@ -1,0 +1,22 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon48.png",
+      "default_popup": "popup.html",
+      "default_title": "LongURL"
+   },
+   "content_scripts": [ {
+      "js": [ "LongURL4Chrome.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "LongURL replaces minified/shortened hyperlinks using the LongURL API",
+   // "key": "",
+   "manifest_version": 2,
+   "name": "LongURL",
+   "options_page": "options.html",
+   "permissions": [ "http://api.longurl.org/v2/*" ],
+   "version": "2.0"
+}
