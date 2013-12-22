@@ -1,17 +1,79 @@
 <html>
-<head>
-<style>
-body{
-min-width: 150px;
-color: gray;
-}
-</style>
-<script type="text/javascript" src="popup.js"></script>
-</head>
+  <head>
+    <style>
+      body {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 85px;
+      }
+
+      div#header {
+        margin: 0px auto;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 30px;
+        width: 100%;
+        background-color: #006705;
+        text-align: center;
+        font-size: 21px;
+
+        color: #fff;
+      }
+
+      div#content {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 100%;
+      }
+
+      div#header * {
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+        font-weight: bold;
+      }
+
+
+      ul#menu {
+        margin: 0px;
+        list-style-type: none;
+        padding: 0px;
+      }
+
+      ul#menu li {
+        height: 30px;
+        background-color: #b9b9b9;
+
+        text-align: center;
+        padding-top: 5px;
+      }
+
+      ul#menu li a {
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+
+        text-decoration: none;
+        color: #000;
+      }
+
+      ul#menu li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <script type="text/javascript" src="popup.js"></script>
+  </head>
 <body>
-LongURL API Calls: <span id="rqr"></span><br />
-<a href="http://api.longurl.org/v2/services?format=json" target="_blank">Supported Services</a>: <span id="services"></span><br />
-<hr />
-<a href="options.html" target="_blank">Options</a>
+  <div id="header">
+    <strong>LongURL</strong>
+  </div>
+
+  <div id="content">
+    <ul id="menu">
+      <li><a href="http://api.longurl.org/v2/services?format=json" target="_blank">Supported Services</a></li>
+      <li><a href="options.html" target="_blank">Options</a></li>
+    </ul>
+  </div>
+
 </body>
 </html>

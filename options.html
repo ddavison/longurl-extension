@@ -1,13 +1,12 @@
-
 <html>
 <head>
-<title>LongURL Extension Options</title>
-<style type="text/css">
-#status{
-color: #FA5858;
-}
-</style>
-<script type="text/javascript" src="options.js"></script>
+  <title>LongURL Extension Options</title>
+  <style type="text/css">
+    #status {
+      color: #FA5858;
+    }
+  </style>
+  <script type="text/javascript" src="options.js"></script>
 </head>
 <body>
 
@@ -16,44 +15,53 @@ color: #FA5858;
 <div align="center" id="status"></div>
 
 <table border="1" align="center" width="700">
-<tr>
-  <th>Description</th>
-  <th>Control</th>
-  <th>Default</th>
-</tr>
-<tr>
-  <td>Show a tooltip when the mouse is over the link</td>
-  <td align="center"><input type="checkbox" name="showPopup" id="showPopup" /></td>
-  <td align="center">Checked</td>
-</tr>
-<tr>
-  <td>Replace the target your browser will go if you click the link.<br />For security and rapidity, checked state is more than recommended.</td>
-  <td align="center"><input type="checkbox" name="replaceHref" id="replaceHref" /></td>
-  <td align="center">Checked</td>
-</tr>
-<tr>
-  <td>Replace the link text</td>
-  <td align="center">
-    <select name="replaceVisibleHref" id="replaceVisibleHref">
-      <option value="0">No</option>
-      <option value="1">By Title</option>
-      <option value="2">By Link</option>
-    </select>
-  </td>
-  <td align="center">Title as <a href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-text">recommended by W3C</a></td>
-</tr>
-<tr>
-  <td>Force change of the link text even if it's not the target.<!--<br />Example: <a href="http://is.gd/w">Home page of Google</a>--></td>
-  <td align="center"><input type="checkbox" name="forceVisibleHref" id="forceVisibleHref" /></td>
-  <td align="center">Not Checked</td>
-</tr>
-<tr>
-  <td colspan="3" align="center"><button id="save_options"><b>Save</b></button> - <button id="restore_options">Restore defaults</button></td>
-</tr>
+  <tr>
+    <th>Description</th>
+    <th>Control</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td>Show a tooltip when the mouse is over the link</td>
+    <td align="center"><input type="checkbox" name="showPopup" id="showPopup"/></td>
+    <td align="center">Checked</td>
+  </tr>
+  <tr>
+    <td>Replace the target your browser will go if you click the link.<br/>For security and rapidity, checked state is
+      more than recommended.
+    </td>
+    <td align="center"><input type="checkbox" name="replaceHref" id="replaceHref"/></td>
+    <td align="center">Checked</td>
+  </tr>
+  <tr>
+    <td>Replace the link text</td>
+    <td align="center">
+      <select name="replaceVisibleHref" id="replaceVisibleHref">
+        <option value="0">No</option>
+        <option value="1">By Title</option>
+        <option value="2">By Link</option>
+      </select>
+    </td>
+    <td align="center">Title as <a href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-text">recommended by W3C</a></td>
+  </tr>
+  <tr>
+    <td>Force change of the link text even if it's not the target.
+      <!--<br />Example: <a href="http://is.gd/w">Home page of Google</a>--></td>
+    <td align="center"><input type="checkbox" name="forceVisibleHref" id="forceVisibleHref"/></td>
+    <td align="center">Not Checked</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <button id="save_options"><b>Save</b></button>
+      -
+      <button id="restore_options">Restore defaults</button>
+    </td>
+  </tr>
 </table>
 
-<br />
-<div align="center">Author: <a href="http://userscripts.org/scripts/show/52584">Thibault ROHMER</a>, Revised by: <a href="http://github.com/ddavison/longurl-extension">Daniel Davison</a></div>
+<br/>
+
+<div align="center">Author: <a href="http://userscripts.org/scripts/show/52584">Thibault ROHMER</a>, Revised by: <a
+  href="http://github.com/ddavison/longurl-extension">Daniel Davison</a></div>
 
 </body>
 </html>

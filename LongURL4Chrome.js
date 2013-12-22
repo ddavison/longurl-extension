@@ -148,10 +148,11 @@ var tooltip =
   {
     var json = waitingItems[tinyurl].data;
     
-    var temp = '<strong>LongURL:</strong> <a href="' + json['long-url'] + '" style="font-size:15px">' + json['long-url'] + '</a><br /><br />';
+    var temp = '<strong>LongURL:</strong> <a href="' + json['long-url'] + '" style="font-size:15px">' + json['long-url'] + '</a><br />';
+    temp += "<em style='font-size: 9px;'>Shortened URL: <a href=''>" + tinyurl + "</a></em><br />";
     // Not shown : response-code (always 200 here)
 
-    temp += "<strong># of redirects:</strong> " + json['all-redirects'].length;
+    temp += "<strong># of redirects:</strong> " + (json['all-redirects'].length -1);
     
     tooltip.content.innerHTML = temp; // Only one .innerHTML  = good perf.
     tooltip.content.style.display = 'block';

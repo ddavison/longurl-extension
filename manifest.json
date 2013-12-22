@@ -1,22 +1,39 @@
 {
-   "background": {
-      "scripts": [ "background.js" ]
-   },
-   "browser_action": {
-      "default_icon": "icon48.png",
-      "default_popup": "popup.html",
-      "default_title": "LongURL"
-   },
-   "content_scripts": [ {
+  "name": "LongURL",
+  "description": "LongURL replaces minified/shortened hyperlinks using the LongURL API",
+
+  "manifest_version": 2,
+  "options_page": "options.html",
+  "version": "2.0",
+
+  "icons": {
+    "16": "icon48.png",
+    "32": "icon48.png",
+    "48": "icon48.png",
+    "64": "icon48.png",
+    "128": "icon48.png",
+    "256": "icon48.png"
+  },
+
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+
+  "browser_action": {
+    "default_icon": "icon48.png",
+    "default_popup": "popup.html",
+    "default_title": "LongURL"
+  },
+
+  "content_scripts": [
+    {
       "js": [ "LongURL4Chrome.js" ],
       "matches": [ "http://*/*", "https://*/*" ],
       "run_at": "document_end"
-   } ],
-   "description": "LongURL replaces minified/shortened hyperlinks using the LongURL API",
-   // "key": "",
-   "manifest_version": 2,
-   "name": "LongURL",
-   "options_page": "options.html",
-   "permissions": [ "http://api.longurl.org/v2/*" ],
-   "version": "2.0"
+    }
+  ],
+
+
+
+  "permissions": [ "http://api.longurl.org/v2/*" ]
 }
